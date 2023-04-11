@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600&family=Seaweed+Script&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Seaweed Script', cursive;
+}
+
+body {
+  /* fallback for old browsers */
+  background: #7F7FD5;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to top, #91EAE4, #86A8E7, #7F7FD5);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to top, #91EAE4, #86A8E7, #7F7FD5);
+}
+
+::-webkit-scrollbar {
+  width: .5rem;
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 100%;
+  background: #beadff;
+  border-radius: .15rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8a6cff;
+}
+
+h1 {
+  font-size: 3rem;
+  position: relative;
+  text-align: center;
+  color: orange;
+  top: 40px;
+  text-shadow: 0px 3px black;
+}
+
+h1::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  background: orange;
+  height: 5px;
+  width: 200px;
+  transform: translateX(150px);
+  box-shadow: 0px 2px black;
+  border-radius: 5px;
+}
+
+.container {
+  margin: 100px 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container .color {
+  background: #ffffff;
+  list-style: none;
+  margin: 13px;
+  padding: 7px;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(57, 87, 220, .8);
+  transition: transform .3s ease;
+}
+
+.container .color:active {
+  transform: scale(.9);
+}
+
+.color .rect-box {
+  width: 200px;
+  height: 100px;
+  background: #8a6cff;
+  border-radius: 5px;
+}
+
+.color:hover .rect-box {
+  filter: brightness(106%);
+}
+
+.color .hex-value {
+  display: block;
+  color: #444444;
+  margin: 12px 0 8px;
+  font-size: 1.15rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.refresh-btn {
+  position: fixed;
+  left: 50%;
+  bottom: 4.5rem;
+  outline: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px 20px;
+  background: #311c81;
+  border: 2px solid #ffffff;
+  box-shadow: 0 15px 25px rgba(52, 87, 220, .75);
+  transform: translateX(-50%);
+  transition: .2s ease-in;
+}
+
+.refresh-btn:hover {
+  background: #140943;
+}
+
+footer {
+  background: #140943;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+footer p {
+  font-size: 1.2rem;
+  font-family: 'Schibsted Grotesk', sans-serif;
+  color: #ffffff;
+}
+
+
+@media screen and (max-width: 510px) {
+  .container {
+    margin: 10px;
+  }
+
+  .container .color {
+    width: 8px;
+    padding: 5px;
+  }
+
+  .color .rect-box {
+    width: 145px;
+    height: 148px;
+  }
+
+  .color .hex-value {
+    font-size: 1.05rem;
+  }
+}
