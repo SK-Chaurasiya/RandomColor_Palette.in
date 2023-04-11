@@ -8,7 +8,7 @@ Simply upload a photo, and we’ll use the hues in the photo to create your pale
 
 ![demo](https://user-images.githubusercontent.com/97239651/231159169-bcdce97d-3fdc-4a88-a4a2-97e39c2924b2.PNG)
 
-Demo >>> Waiting for Update
+Demo >>> https://sk-chaurasiya.github.io/RandomColor_Palette.in/
 
 Special Gift >>> https://rb.gy/5y76a
 
